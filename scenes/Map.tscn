@@ -1,0 +1,144 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/Ground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/background/background.png" type="Texture" id=2]
+[ext_resource path="res://scripts/Map.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Coin.tscn" type="PackedScene" id=4]
+
+[node name="Map" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Ground" parent="." instance=ExtResource( 1 )]
+position = Vector2( 72, 576 )
+
+[node name="Ground18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 296 )
+
+[node name="Ground19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 712, 360 )
+
+[node name="Ground20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1160, 360 )
+
+[node name="Ground27" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1480, 296 )
+
+[node name="Ground28" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1800, 216 )
+
+[node name="Ground21" parent="." instance=ExtResource( 1 )]
+position = Vector2( -24, 480 )
+rotation = -1.55737
+
+[node name="Ground22" parent="." instance=ExtResource( 1 )]
+position = Vector2( -24, 336 )
+rotation = -1.55737
+
+[node name="Ground23" parent="." instance=ExtResource( 1 )]
+position = Vector2( -24, 192 )
+rotation = -1.55737
+
+[node name="Ground24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2376, 480 )
+rotation = 1.54188
+
+[node name="Ground25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2376, 336 )
+rotation = 1.54188
+
+[node name="Ground26" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2376, 192 )
+rotation = 1.54188
+
+[node name="Ground2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 216, 576 )
+
+[node name="Ground3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 360, 576 )
+
+[node name="Ground4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 504, 576 )
+
+[node name="Ground5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 648, 576 )
+
+[node name="Ground6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 792, 576 )
+
+[node name="Ground7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 936, 576 )
+
+[node name="Ground8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1080, 576 )
+
+[node name="Ground9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1224, 576 )
+
+[node name="Ground10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1368, 576 )
+
+[node name="Ground11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1512, 576 )
+
+[node name="Ground12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1656, 576 )
+
+[node name="Ground13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1800, 576 )
+
+[node name="Ground14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1944, 576 )
+
+[node name="Ground15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2088, 576 )
+
+[node name="Ground16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2232, 576 )
+
+[node name="Ground17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2376, 576 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 392, 280 )
+scale = Vector2( 3.27273, 3.56078 )
+z_index = -2
+texture = ExtResource( 2 )
+
+[node name="background2" type="Sprite" parent="."]
+position = Vector2( 1176, 280 )
+scale = Vector2( 3.27273, 3.56078 )
+z_index = -2
+texture = ExtResource( 2 )
+
+[node name="background3" type="Sprite" parent="."]
+position = Vector2( 1960, 280 )
+scale = Vector2( 3.27273, 3.56078 )
+z_index = -2
+texture = ExtResource( 2 )
+
+[node name="Coin" parent="." instance=ExtResource( 4 )]
+position = Vector2( 440, 272 )
+
+[node name="Coin7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 472, 544 )
+
+[node name="Coin8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 440, 544 )
+
+[node name="Coin9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 408, 544 )
+
+[node name="Coin6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 504, 544 )
+
+[node name="Coin2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 712, 336 )
+
+[node name="Coin3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1168, 336 )
+
+[node name="Coin4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1488, 272 )
+
+[node name="Coin5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1808, 192 )

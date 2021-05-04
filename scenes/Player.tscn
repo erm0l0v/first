@@ -1,0 +1,44 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/idle/adventurer-idle-01.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://assets/idle/adventurer-idle-02.png" type="Texture" id=3]
+[ext_resource path="res://assets/idle/adventurer-idle-00.png" type="Texture" id=4]
+[ext_resource path="res://assets/run/adventurer-run-02.png" type="Texture" id=5]
+[ext_resource path="res://assets/run/adventurer-run-01.png" type="Texture" id=6]
+[ext_resource path="res://assets/run/adventurer-run-00.png" type="Texture" id=7]
+[ext_resource path="res://assets/run/adventurer-run-05.png" type="Texture" id=8]
+[ext_resource path="res://assets/run/adventurer-run-04.png" type="Texture" id=9]
+[ext_resource path="res://assets/run/adventurer-run-03.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15.428, 37 )
+
+[node name="Player" type="KinematicBody2D" groups=[
+"player",
+]]
+script = ExtResource( 2 )
+
+[node name="PlayerSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2.70381, 3.72593 )
+frames = SubResource( 2 )
+animation = "Idle"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.06067, 10.8508 )
+scale = Vector2( 1.31151, 1.48081 )
+shape = SubResource( 1 )
